@@ -1,0 +1,51 @@
+/* Main da página de artista */
+.artist-banner {
+    height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.banner-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, #000 100%);
+    z-index: 1;
+}
+
+.banner-content {
+    z-index: 2;
+    color: white;
+}
+
+.banner-content i {
+    color: rgb(43, 255, 0);
+}
+
+/* Linha entre as músicas */
+.list-group-item {
+    border-color: #444 !important;
+}
+
+/* Aumenta o tamanho da fonte e o espaçamento vertical */
+.musica-item {
+    font-size: 1.1rem; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

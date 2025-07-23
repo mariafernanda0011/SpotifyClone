@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PlayMusic </title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Topo fixo -->
+    <header class="top-bar">
+        <div class="d-flex align-items-center justify-content-between px-4 py-2">
+            <div class="nav-logo d-flex align-items-center gap-2"> <!-- classe criada -->
+                <a href="index.html" class="d-flex align-items-center gap-2 text-white text-decoration-none">
+                    <i class="bi bi-earbuds fs-3"> </i> <!-- "Logo" usando icone do Bootstrap 5 -->
+                    <h1 class="mb-0 fs-4"> PlayMusic </h1>
+                </a>
+            </div>
+
+            <div class="search-bar d-flex align-items-center gap-2">
+                <i class="bi bi-search"></i>
+                <input type="search" class="search-input" placeholder="O que você quer ouvir?" aria-label="Buscar">
+            </div>
+
+            <button type="button" class="btn btn-light"> <strong>Fazer login</strong></button>
+        </div>
+    </header>
+
+    <!-- Abre conteúdo principal -->
+    <div class="conteudo-principal d-flex">
+
+        <!-- Inicio do menu de Navegação Lateral -->
+        <nav class="side-bar">
+
+            <div class="nav-library d-flex justify-content-between align-items-center">
+                <!-- Classe criada e classes do Bootstrap 5 -->
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-book-half"></i>
+                    <span> Sua biblioteca </span>
+                </div>
+                <i class="bi bi-plus-circle align-self-center"></i>
+            </div>
+
+            <div class="nav-playlist mb-3"> <!-- classe criada -->
+                <h5> Crie sua primeira playlist </h5>
+                <p> É fácil, vamos te ajudar. </p>
+                <button type="button" class="btn btn-light fw-bold"> Criar Playlist </button>
+            </div>
+
+            <div class="nav-podcast"> <!-- classe criada -->
+                <h5> Que tal seguir um podcast novo? </h5>
+                <p> Avisaremos você sobre novos episódios. </p>
+                <button type="button" class="btn btn-light fw-bold"> Explore Podcasts </button>
+            </div>
+
+            <!-- Footer da side-bar-->
+            <div class="mt-auto px-3">
+
+                <div class="nav-footer mb-2"> <!-- classe criada -->
+                    <a href="#"> Legal </a>
+                    <a href="#"> Centro de Privacidade </a>
+                    <a href="#"> Política de Privacidade </a>
+                    <a href="#"> Cookies </a>
+                    <a href="#"> Sobre anúncios </a>
+                    <a href="#"> Acessibilidade </a>
+                </div>
+
+                <button type="button" class="btn btn-light nav-lang-button w-100">
+                    <i class="bi bi-translate"></i>
+                    Português - Brasil
+                </button>
+            </div>
+        </nav> <!-- Fim do menu de navegação lateral-->
+
+        <!-- Corpo da página -->
+        <main class="col-12 col-md-9">
+
+            <section class="content">
+                <h2 class="fw-bold"> Artistas populares </h2>
+                <div class="artists-grid">
+                    <!-- Aqui os dados são inseridos com JS -->
+                </div>
+
+                <h2 class="fw-bold"> Álbuns populares </h2>
+                <div class="albums-grid">
+                    <!-- Aqui os dados são inseridos com JS -->
+                </div>
+            </section>
+        </main>
+
+    </div> <!-- fecha .conteudo-principal -->
+
+</body>
+<script src="js/index.js"> </script>
+
+</html>

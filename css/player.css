@@ -1,0 +1,107 @@
+/*  Barra inferior do player (Footer)  */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #181818;
+    color: white;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 1000;
+}
+
+.player-bar i {
+    cursor: pointer;
+}
+
+/*  Informações da música com texto truncado  */
+footer .text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*  Estilo do controle de progresso da música  */
+footer input[type="range"] {
+    accent-color: #1db954;
+}
+
+/*  Capa da música oculta por padrão  */
+.capa-oculta {
+    display: none;
+}
+
+/*  Barra de progresso da música  */
+.progress {
+    width: 500px;
+}
+
+/*  Barra de volume  */
+.volume-range {
+    height: 3px;
+    width: 100px;
+    padding: 0;
+    max-width: 120px;
+}
+
+/*  Estilo da trilha da barra de volume  */
+.volume-range::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #1db954;
+    border-radius: 5px;
+}
+
+/*  Estilo do "thumb" (bolinha) da barra de volume  */
+.volume-range::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+}
+
+/*  Controles do player centralizado  */
+.player-controls {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 500px;
+    pointer-events: auto;
+}
+
+.btn-ativo i {
+    color: rgb(43, 255, 0) !important;
+}
+
+/*  Container interno do footer  */
+footer .container-fluid {
+    position: relative;
+    height: 100%;
+}
+
+/*  Posicionamento dos botões de controle do player  */
+.player-controls {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    pointer-events: auto;
+}
+
+/*  Informações da música com truncamento de texto  */
+footer .music-info {
+    min-width: 0;
+    max-width: 220px;
+    overflow: hidden;
+}
+
+footer .music-info .text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
